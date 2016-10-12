@@ -220,8 +220,7 @@ body.with-listing-chooser #header .pagename { bottom: initial }
 body.with-listing-chooser.listing-chooser-collapsed>.content, body.with-listing-chooser.listing-chooser-collapsed .footer-parent { margin-left: 0 }
 body.with-listing-chooser .listing-chooser { top: 196px; bottom: 800px; width: 170px; overflow: visible; padding: 0; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); background-color: #fff }
 body.with-listing-chooser.listing-chooser-collapsed .listing-chooser { padding: 0; z-index: 1 }
-body.with-listing-chooser>.content { margin-left: 186px }
-body.with-listing-chooser>.content { transition: .2s margin-left ease }
+body.with-listing-chooser[class]>.content { margin-left: 186px; transition: .2s margin-left ease }
 body.with-listing-chooser.listing-chooser-collapsed>.content { margin-left: 16px; }
 body.with-listing-chooser .listing-chooser.initialized .grippy, body.with-listing-chooser.listing-chooser-collapsed .listing-chooser .grippy {
     position: absolute;
@@ -427,70 +426,10 @@ body.with-listing-chooser .footer-parent { margin-left: 0 }
 
 /* Search Page */
 
-.searchpane, .search-page .searchpane {
-    background: none;
-    border: none;
-    margin: -24px -352px 16px -16px;
-    padding: 96px 352px 64px 0;
-    background:  #2196F3;
-}
-
-.searchpane #search {
-    position: relative;
-    top: 0;
-    margin: 0 auto;
-    width: 50%;
-}
-
-.searchpane #search input[type=text] {
-    padding: 0 0 32px 48px;
-    width: 100%;
-    border-bottom: 1px solid #fff;
-    box-shadow: inset 0 -1px 0 0 transparent;
-    background: transparent;
-    font-size: 42px;
-    font-weight: 400;
-    height: initial;
-    color: #fff !important;
-    border-radius: 0;
-    transition: .3s box-shadow ease;
-    line-height: normal;
-}
-
-.searchpane #search input[type=text]::-webkit-input-placeholder:after {
-    font-size: 42px;
-    font-weight: 400;
-    color: #fff !important;
-}
-
-.searchpane #search input[type=text]:focus { box-shadow: inset 0 -1px 0 0 #fff; }
-.searchpane #search input[type=text]:focus:hover { box-shadow: inset 0 -1px 0 0 #fff !important }
-
-.searchpane #search input[type=submit] {
-    background-image: url(%%spritesheet%%);
-    background-position: 0px -312px;
-    background-size: initial;
-    width: 42px;
-    height: 42px;
-    padding: 0;
-    margin: -9px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 20px;
-}
-
-.searchpane #search input[type=submit]:hover { background-color: rgba(0,0,0,.15) }
-.searchpane #search input[type=submit]:active { background-color: rgba(0,0,0,.3) }
-
-.search-page #previoussearch p a#search_showmore { left: initial; top: 20px; right: 0; }
-.search-page .searchpane #search input[type=text] { padding: 0 22px 32px 48px; }
-.search-page .searchfacets {
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-    border: none;
-    border-radius: 2px;
-    margin-bottom: 16px;
-}
+.side .titlebox h1.redditname { top: 240px; }
+.titlebox span.subscribers { top: 264px; }
+.titlebox .fancy-toggle-button { top: 242px; }
+.search-page .side { margin-top: 160px; }
 
 /* Subreddits Page */
 
