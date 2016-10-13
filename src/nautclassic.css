@@ -210,8 +210,8 @@ body.with-listing-chooser #header .pagename { bottom: initial }
 .sitetable[class] .message:first-of-type > .entry { border-top: none }
 .was-comment .midcol { margin: 10px 0 }
 .message .child .usertext, .message .child .usertext .md { margin-left: 0 }
-.trending-subreddits { margin: -8px -16px 0; padding: 8px 0; border-bottom: 1px solid #EEEEEE; }
-.content .midcol-spacer { width: 64px }
+.trending-subreddits { margin: 0; padding: 8px 16px; border-bottom: 1px solid #EEEEEE; }
+.content .midcol-spacer { height: 0 }
 
 /* Listing Chooser */
 
@@ -232,7 +232,7 @@ body.with-listing-chooser .listing-chooser.initialized .grippy, body.with-listin
     background: #fff;
     border: none;
     margin: 0 16px;
-    transition: all .4s ease;
+    transition: transform .4s ease, top .4s ease, left .4s ease, width .4s ease;
 }
 body.with-listing-chooser .listing-chooser .grippy:before, body.with-listing-chooser .listing-chooser .grippy:after, body.with-listing-chooser.listing-chooser-collapsed .listing-chooser .grippy:before, body.with-listing-chooser.listing-chooser-collapsed .listing-chooser .grippy:after, body.with-listing-chooser .listing-chooser .grippy:hover:after, body.with-listing-chooser .listing-chooser:hover .grippy:before {
     position: absolute;
@@ -247,7 +247,7 @@ body.with-listing-chooser .listing-chooser .grippy:before, body.with-listing-cho
     opacity: 1;
     border-left: none;
     border-right: none;
-    transition: all .4s ease;
+    transition: transform .4s ease, top .4s ease, left .4s ease, width .4s ease;
 }
 body.with-listing-chooser .listing-chooser .grippy:before { top: -6px; border-top: 2px solid #fff; }
 body.with-listing-chooser .listing-chooser .grippy:after { bottom: -6px; border-bottom: 2px solid #fff; }
@@ -426,9 +426,9 @@ body.with-listing-chooser .footer-parent { margin-left: 0 }
 
 /* Search Page */
 
-.side .titlebox h1.redditname { top: 240px; }
-.titlebox span.subscribers { top: 264px; }
-.titlebox .fancy-toggle-button { top: 242px; }
+.search-page .side .titlebox h1.redditname { top: 240px; }
+.search-page .titlebox span.subscribers { top: 264px; }
+.search-page .titlebox .fancy-toggle-button { top: 242px; }
 .search-page .side { margin-top: 160px; }
 
 /* Subreddits Page */
@@ -874,7 +874,8 @@ body.compose-page[class] {
     .mod-toolbox.messages-page[class] .content > .menuarea .flat-list:first-of-type li:nth-of-type(7) a:hover,
     .mod-toolbox.messages-page[class] .content > .menuarea .flat-list:first-of-type li:nth-of-type(8) a:hover,
     #quickMessageDialog[class] input[type=button]:hover,
-    .interstitial .buttons .c-btn:hover
+    .interstitial .buttons .c-btn:hover,
+    .nextprev .arrow:hover
             {
         background-color: #2196F3
     }
@@ -952,6 +953,20 @@ body.compose-page[class] {
     .RESMenuItemButton {
         border-radius: 50%;
     }
+
+/* NEXTPREV BUTTON */
+
+.organic-listing .nextprev .arrow {
+    text-indent: 0;
+    border: 0;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    padding: 0 8px;
+    line-height: 22px;
+}
+
+.organic-listing .nextprev .arrow:hover { border: none; }
 
 /* Switch */
 
