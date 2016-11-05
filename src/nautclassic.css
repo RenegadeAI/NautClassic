@@ -40,11 +40,31 @@ body.with-listing-chooser #header .pagename { bottom: initial }
 .comments-page .side .linkinfo { top: 414px }
 .comments-page .side { margin-top: 320px }
 
-.with-listing-chooser:not(.multi-page):not(.profile-page) .sidebox:not(.create) .morelink { top: 270px }
+.with-listing-chooser:not(.multi-page):not(.profile-page) .sidebox.submit .morelink { top: 270px }
 .with-listing-chooser:not(.multi-page):not(.profile-page) .side { margin-top: 110px }
 
 .search-page .morelink { top: 172px; }
 .search-page .side { margin-top: 250px; }
+
+/* Secret santa */
+
+.sidebox.hohoho .morelink {
+    top: 40px;
+    right: 16px;
+    z-index: 1;
+    width: auto;
+    padding: 0 16px;
+    background: #ff4420;
+}
+
+.sidebox.hohoho .morelink a {
+    font-size: 15px;
+    color: #fff;
+}
+
+.sidebox.hohoho .morelink a:before {
+    margin: 0;
+}
 
 /*.content>.menuarea { border: none }*/
 
